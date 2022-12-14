@@ -4,6 +4,7 @@ import { combineReducers,createStore  } from "redux";
 import { Provider } from "react-redux";
 import Field from './field'
 import fieldReducer from "./fieldReducer";
+import Counter from "./counter";
 
 
 
@@ -12,6 +13,6 @@ const reducers = combineReducers({
 })
 ReactDOM.render(
     <Provider store={createStore(reducers)}>
-        <Field initialValue='teste' />
+        <Counter />
     </Provider>
 ,document.getElementById('app'))

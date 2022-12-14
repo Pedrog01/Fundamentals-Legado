@@ -10,7 +10,7 @@ const reducers = combineReducers({
     field: () => ({value: 'opa'})
 })
 ReactDOM.render(
-    <Provider>
+    <Provider store={createStore(reducers)}>
         <Field initialValue='teste' />
     </Provider>
 ,document.getElementById('app'))
